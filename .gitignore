@@ -6,9 +6,18 @@ out/
 !/broadcast
 /broadcast/*/31337/
 /broadcast/**/dry-run/
+/notes
 
 # Docs
 docs/
 
 # Dotenv file
 .env
+
+.woke-build
+.woke-logs
+pytypes
+__pycache__/
+*.py[cod]
+.hypothesis/
+woke-coverage.cov

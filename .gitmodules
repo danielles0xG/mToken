@@ -7,9 +7,3 @@
 [submodule "lib/properties"]
 	path = lib/properties
 	url = https://github.com/crytic/properties
-[submodule "lib/aave-v3-core"]
-	path = lib/aave-v3-core
-	url = https://github.com/aave/aave-v3-core
-[submodule "lib/solidity-interest-helper"]
-	path = lib/solidity-interest-helper
-	url = https://github.com/wolflo/solidity-interest-helper
