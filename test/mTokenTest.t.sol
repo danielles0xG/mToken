@@ -87,6 +87,9 @@ contract mTokenTest is BaseTest {
         vm.startPrank(_wallet1.addr);
         uint256 earnedBeforeTransfer = token.earned();
 
+        // comparing simple interest vs compund interest
+        assertGt(token.balanceOf(_wallet1.addr) + earnedBeforeTransfer, token.balanceOf(_wallet1.addr) * interestRate / 10_000);
+
         token.transfer(_wallet2.addr, transferAmount);
 
         assertEq(token.balanceOf(_wallet1.addr), earnedBeforeTransfer + transferAmount);
